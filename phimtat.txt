@@ -1,0 +1,32 @@
+
+alt + click => chọn nhiều dòng ở nhiều chỗ khác nhau edit đc
+tô chuột các ptu giống nhau +ctrl+shift+l rồi di chuyển đến vị trí cần chỉnh sửa
+ctrl d chọn các phần tử giống nhau nhưng nhảy từ trên xuống dưới
+Ctrl + Shift + F: Tìm kiếm trong toàn bộ dự án có thể tắt những chỗ ko cần edit
+Ctrl + G: Nhảy đến một dòng cụ thể trong tài liệu hiện tại để fix bug
+Ctrl + Shift + V: Mở trình xem trước Markdown.
+F12: Nhảy đến định nghĩa của một hàm hoặc biến.
+Alt + F12: Hiển thị tất cả các tham chiếu của một biến hoặc hàm.
+Ctrl + Shift + ] hoặc Ctrl + Shift + [: Tăng hoặc giảm cấp độ thụt đầu dòng của đoạn code được chọn.
+ctrl +k ->ctrl +s hiển thị phím tắt
+shift +f9 đánh dấu chỗ cần lưu ý
+ctrl r mở folder mới
+shift tab trở ngược lại sau khi tab line format
+ctrl alt right arrow phân trang
+ctrl alt windown N tạo file mới
+ctrl o mở file mới
+nhấn tab để nhận gợi ý
+nhúng icon :fontawesome cdn
+Ctrl K+T đổi theme
+
+làm database copy mot luot roi paste, chỉnh sửa ở ngoài luôn
+
+
+npm install concerrently 
+mở tsconfig sửa đường dẫn rootDir nơi chứa file ts, outDir nơi chứa file js compire
+
+Ctrl K + R mở shortcut
+
+
+
+

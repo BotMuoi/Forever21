@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/stylescon.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="/CSS/stylesslide.css">
+    <script src="/js/selectimg.js"></script>
+    <link rel="stylesheet" href="/CSS/hoverimg.css">
+    <script src="/js/hoverimg.js"></script>
+    <script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="/CSS/formdk.css">
+</head>
+
+<body>
+    <div class="header-mobie">
+        <div class="top">
+            <div class="opt-barsss">
+                <img src="/images/Vector.svg" alt="">
+                <div class="miano"><a href="index.php"><img src="/images/FOREVER 21.svg" alt=""></a></div>
+            </div>
+            <div class="icon">
+                <ion-icon name="heart-outline"></ion-icon>
+                <label for="form">
+                    <ion-icon name="person-outline"></ion-icon>
+                </label>
+                <ion-icon name="bag-outline"><a href="cart.html"></a></ion-icon>
+            </div>
+        </div>
+        <div class="bottom">
+            <input class="cssinput" type="text" placeholder="Search">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+    </div>
+    <header class="header-pc">
+        <div class="header-topbar">
+            <div class="help">
+                <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                <span></span>
+            </div>
+            <div class="co">
+                <img src="/images/Group 1.svg" alt="">
+                <span>VietNam</span>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <a href=""><img src="/images/FOREVER 21.svg" alt=""></a>
+            </div>
+            <div class="search">
+                <input type="text">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <div class="icon">
+                <ion-icon name="heart-outline"></ion-icon>
+                <label for="form-ipt">
+                    <ion-icon class="person-outline" name="person-outline"></ion-icon>
+                </label>
+
+                <input type="checkbox" name="" id="form-ipt">
+
+                <div class="form">
+                    <form action="/user/luu" method="POST">
+                        <h1>Login</h1>
+                        <div class="luachon">
+                            <label for="nhap1"><span>Login</span></label>
+                            <label for="nhap2"><span>Create account</span></label>
+                        </div>
+                        <hr>
+                        <input type="radio" name="nhap" id="nhap1" checked>
+                        <!-- <div class="an">
+                            <h6 class="notification">
+
+                            </h6>
+                            <fieldset>
+                                <legend>
+                                    EMAIL
+                                    <img src="/images/_ (1).png" alt="">
+                                </legend>
+                                <input name="si-email" class="form_control form_control_email" type="text" placeholder="YOUR EMAIL">
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    PASS WORD
+                                    <img src="/images/_ (1).png" alt="">
+                                </legend>
+                                <input name="si-password" class="form_control form_control_password" type="text" placeholder="YOUR PASSWORD">
+                            </fieldset>
+                            <div class="checki">
+                                <div class="remember">
+                                    <input type="checkbox">
+                                    <span>Remember me</span>
+                                </div>
+                                <div>
+                                    <span><u>Forgot password?</u></span>
+                                </div>
+                            </div>
+                            <button class="dn">
+                                <span>Login</span>
+                            </button>
+                            <button class="dn">
+                                <span>Check Order</span>
+                            </button>
+                            <button class="dn">
+                                <span>Check Balance of Gift Card</span>
+                            </button>
+                            <span class="cangiuaform">Or login using one of these</span>
+                            <div class="dnb"><a href=""><img src="/images/Rectangle 90.png" alt=""></a></div>
+                            <div class="dnb"><a href=""><img src="/images/Rectangle 91.png" alt=""></a></div>
+                            <div class="dnb"><a href=""><img src="/images/Rectangle 92.png" alt=""></a></div>
+                        </div> -->
+                        <input type="radio" name="nhap" id="nhap2">
+                        <div class="create">
+                            <fieldset>
+                                <legend>
+                                    Full Name
+                                    <img src="/images/_ (1).png" alt="">
+                                </legend>
+                                <input name="fullname" class="form_control form_control_yourname" type="text" placeholder="FULL NAME">
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    User Name
+                                    <img src="/images/_ (1).png" alt="">
+                                </legend>
+                                <input name="username" class="form_control form_control_lastname" type="text" placeholder="USER NAME">
+                            </fieldset>
+                            <span class="Bir">Birthday</span>
+                            <div class="birthday" width="100%">
+                                <fieldset>
+                                    <legend>
+                                        Date of birth
+                                        <img src="/images/_ (1).png" alt="">
+                                    </legend>
+                                    <input name="birthday"  class="form_control form_control_birthday" type="date" placeholder="">
+                                </fieldset>
+                            </div>
+                            <fieldset>
+                                <legend>
+                                    PHONE
+                                    <img src="/images/_ (1).png" alt="">
+                                </legend>
+                                <input name="phone" class="form_control form_control_phone" type="text" placeholder="YOUR PHONE">
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    EMAIL
+                                    <img src="/images/_ (1).png" alt="">
+                                </legend>
+                                <input name="email" class="form_control form_control_email_signup" type="text" placeholder="YOUR EMAIL">
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    PASSWORD
+                                    <img src="/images/_ (1).png" alt="">
+                                </legend>
+                                <input name="password" class="form_control form_control_password_signup" type="text" placeholder="PASSWORD">
+                            </fieldset>
+                            <ul>
+                                <div class="canli">
+                                    <li>8 characters minimum</li>
+                                    <li>
+                                        One letter
+                                    </li>
+                                </div>
+                                <li>One number</li>
+                            </ul>
+                            <h6 class="notification_signup"></h6>
+                            <div class="Confirm">
+                                <fieldset>
+                                    <legend>
+                                        CONFIRM PASSWORD
+                                        <img src="/images/_ (1).png" alt="">
+                                    </legend>
+                                    <input name="confirmpassword" class="form_control form_control_confirmpassword_signup" type="text" placeholder="PASSWORD">
+                                </fieldset>
+                            </div>
+                            <h2>OPTIONAL</h2>
+                            <div class="dydk">
+                                <input type="checkbox" name="" id="">
+                                <span>Please email me the latest fashion news and exclusive offers. By signing up for
+                                    marketing emails, you are requesting that Forever 21 send promotional offers to this
+                                    email address and accept our <a href="">Terms & Privacy Policy</a>.</span>
+                            </div>
+                            <div class="dydk">
+                                <input type="checkbox" name="" id="">
+                                <span>By checking this box, you agree to receive recurring automated promotional and
+                                    personalized marketing text messages (e.g. cart reminders) from Forever 21 at the cell
+                                    number used when signing up. Consent is not a condition of any purchase. Reply HELP for
+                                    help and STOP to cancel. Msg frequency varies. Msg & data rates may apply. View <a
+                                        href="">Terms & Privacy Policy</a>.</span>
+                            </div>
+                            <button type="submit" class="dk">
+                                <span>Create Account</span>
+                            </button>
+                            <span class="xongthoi">By clicking 'Create Account' you agree to the Forever 21 <a href="">Terms
+                                    & Privacy</a>.</span>
+                            <span class="xongthoi"><a href="">Policy</a></span>
+                        </div>
+                    </form>
+                </div>
+                <label class="overlay" for="form-ipt"></label>
+                <a class="CSScart" href="cart.html">
+                    <ion-icon class="bag-outline" name="bag-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="opt-bars">
+                <img src="/images/Vector.svg" alt="">
+                <span>Cửa hàng theo loại</span>
+            </div>
+            <div class="hbottom_right">
+                <div>
+                    <img src="/images/Group 4.svg" alt="">
+                    <span class="fix">F21 Thẻ tín dụng</span>
+                </div>
+                <div>
+                    <a href="">
+                        <ion-icon name="gift-outline"></ion-icon>
+                        <span> Thẻ quà</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="PR">
+        <div class="PR1">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+            <div>
+                <span class="slideshow">Giảm 70% mọi thứ</span>
+                <!-- <span class="slideshow">Shop Now. Pay in 4 with Klarna.*</span>
+                <span class="slideshow">Click & Collect | Buy Online, Ship FREE to Store</span>
+                <span class="slideshow">Take an Extra 50% Off Sale | Code: EXTRA50</span> -->
+            </div>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="quangcao">
+        <a href=""><img src="/images/BMSM_DESKTOP.jpg" alt=""></a>
+    </div>
+    <div class="title">
+        <span>Trang chủ / Nữ / Quần áo / Fit & Flare Mini Dress</span>
+    </div>
+    <div class="motasp">
+        
+    </div>
+    <!-- kthuc ctsp -->
+    <div class="marketing">
+        <span>Có thể bạn cũng thích</span>
+        <hr>
+    </div>
+    <div class="banner6">
+        <div class="banner6-1">
+            <a class="chuyen1" href="">
+                <div class="hinh">
+                    <img class="chan" src="/images/Rectangle 60.jpg" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label onclick="choiceColor(this,'1-1');" for="optionxx"><img src="/images/Ellipse 2.png"
+                            alt=""></label>
+                    <label onclick="choiceColor(this,'1-2');" for="option1xx"><img src="/images/Ellipse 3.png"
+                            alt=""></label>
+                    <!-- <label for="option2"></label>
+                    <label for="option3"></label> -->
+                    <input type="radio" id="optionxx" name="mau">
+                    <input type="radio" id="option1xx" name="mau">
+                    <!-- <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau"> -->
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Vented Button-Front Blazer</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a class="chuyen2" href="">
+                <div class="hinh">
+                    <img src="/images/Rectangle 60ke3.png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/00460357-05.webp" alt=""></label>
+                    <label for="option1"></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Floral Print Midi Dress</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a class="chuyen3" href="">
+                <div class="hinh">
+                    <img src="/images/Rectangle 60 (1).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 4.png" alt=""></label>
+                    <label for="option1"><img src="/images/Ellipse 4-1.png" alt=""></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Floral Print Midi Dress</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a href="">
+                <div class="hinh">
+                    <img src="/images/Rectangle 60 (2).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 5.png" alt=""></label>
+                    <label for="option1"></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Denim Dolphin-Hem Shacket</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a href="">
+                <div class="hinh">
+                    <img src="/images/Rectangle 60 (3).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 6.png" alt=""></label>
+                    <label for="option1"><img src="/images/Ellipse 7.png" alt=""></label>
+                    <label for="option2"><img src="/images/Ellipse 9.png" alt=""></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Plunging Surplice Mini Dress</span><br>
+                    <span class="gia">
+
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a href="">
+                <div class="hinh">
+                    <img src="/images/Rectangle 60 (4).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 8.png" alt=""></label>
+                    <label for="option1"><img src="/images/Ellipse 10.png" alt=""></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Crochet-Trim Maxi Dress</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="banner6">
+            </div>
+    <div class="marketing">
+        <span>OFTEN BOUGHT WITH</span>
+        <hr>
+    </div>
+    <div class="banner6">
+        <div class="banner6-1">
+            <a class="chuyen1" href="">
+                <div class="hinh">
+                    <img src="/images/61 (4).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 11.png" alt=""></label>
+                    <label for="option1"><img src="" alt=""></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Ruffled Floral Print Mini Dress</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a class="chuyen2" href="">
+                <div class="hinh">
+                    <img src="/images/61 (3).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 12.png" alt=""></label>
+                    <label for="option1"><img src="/images/Ellipse 12-1.png" alt=""></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Hello Kitty Velour Sweatpants</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a class="chuyen3" href="">
+                <div class="hinh">
+                    <img src="/images/61 (2).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 13.png" alt=""></label>
+                    <label for="option1"><img src="/images/Ellipse 13-1.png" alt=""></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Floral Print Sweetheart Midi Dress</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a href="">
+                <div class="hinh">
+                    <img src="/images/61 (1).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 14.png" alt=""></label>
+                    <label for="option1"><img src="/images/Ellipse 14-1.png" alt=""></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Tiered Flounce Mini Dress</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a href="">
+                <div class="hinh">
+                    <img src="/images/61 (6).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 15.png" alt=""></label>
+                    <label for="option1"><img src="" alt=""></label>
+                    <label for="option2"><img src="" alt=""></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Floral Print O-Ring Maxi Dress</span><br>
+                    <span class="gia">
+
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+        <div class="banner6-1">
+            <a href="">
+                <div class="hinh">
+                    <img src="/images/61 (5).png" alt="">
+                </div>
+            </a>
+            <div class="bosung">
+                <div class="option-color">
+                    <label for="option"><img src="/images/Ellipse 16.png" alt=""></label>
+                    <label for="option1"><img src="/images/Ellipse 16-1.png" alt=""></label>
+                    <label for="option2"></label>
+                    <label for="option3"></label>
+                    <input type="radio" id="option" name="mau">
+                    <input type="radio" id="option1" name="mau">
+                    <input type="radio" id="option2" name="mau">
+                    <input type="radio" id="option3" name="mau">
+                </div>
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <a href="">
+                <div class="decription">
+                    <span>Distressed Mid-Rise Jeans</span><br>
+                    <span class="gia">
+                        <b>₫823,332</b>
+                        <s>₫1,176,300</s>
+                        <span>30% OFF</span>
+                    </span><br>
+                    <span class="kieuchu">Summer Deals!</span><br>
+                    <span class="mamau">Matching Item Available</span><br>
+                    <span class="rating"><img src="/images/Group 30.svg" alt=""><span>(31)</span></span>
+                    <span>676 Comments</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-box">
+            <div>
+                <a href="">
+                    <h2>Company Info</h2>
+                </a>
+            </div>
+            <div class="chinhchu">
+                <a href="">
+                    About Us
+                    Careers
+                    Social Responsibility
+                    Affiliate Program
+                    Business With Us
+                    Press & Talent
+                    Find a Store
+                    Site Map
+                    Forever 21 Gives Back
+                </a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <div>
+                <a href="">
+                    <h2>Help</h2>
+                </a>
+            </div>
+            <div class="chinhchu">
+                <a href="form.html">Contact Us</a> <br>
+                <a href="">
+                    Order Status
+                    Shipping Info
+                    Online Returns & Exchanges
+                    Store Return & Exchange
+                    Size Guide
+                    FAQ
+                    Buy Online, Pick Up In-Store
+                </a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <div>
+                <a href="">
+                    <h2>Quick Links</h2>
+                </a>
+            </div>
+            <div class="chinhchu">
+                <a href="">
+                    Special Offers
+                    Gift Cards
+                    Student Discount
+                    Blog
+                    Privacy Policy
+                    Your California Privacy Rights
+                    CA Transparency in Supply Chains Act
+                    Terms of Use
+                    Web Accessibility Statement
+                </a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <div>
+                <a href="">
+                    <h2>Forever Rewarded</h2>
+                </a>
+            </div>
+            <div class="chinhchu">
+                <a href="">
+                    Card Benefit
+                    Manage Account
+                    - Forever 21 Credit Card
+                    - Forever 21 VISA Credit Card
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="banner9">
+        <a href=""><img src="/images/vector (4).png" alt=""></a>
+        <a href=""><img src="/images/vector (9).png" alt=""></a>
+        <a href=""><img src="/images/vector (1).png" alt=""></a>
+        <a href=""><img src="/images/vector (8).png" alt=""></a>
+        <a href=""><img src="/images/vector (7).png" alt=""></a>
+        <a class="xong" href=""><img src="/images/vector (6).png" alt=""></a>
+        <a class="xong" href=""><img src="/images/vector (5).png" alt=""></a>
+    </div>
+    <div class="banner10">
+        <span>© 2022 Forever 21 All rights reserved.</span>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    const myHeaders = new Headers(); // Currently empty
+    const detail =  myHeaders.get('Accept-Encoding'); // Returns null
+    console.log(detail);
+</script>
+<script type="module" src="js/detail.js"></script>
+<script type="module" src="js/Login.js"></script>
+<script type="module" src="js/Signup.js"></script>
+<script src="/js/chitietsanpham.js"></script>
+</html>

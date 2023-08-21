@@ -1,0 +1,79 @@
+   <div class="banner6-1">
+                    <a class="chuyen1" href="">
+                        <div class="hinh">
+                            <img class="chan" src="<%=ct.urlHinhHome%>" alt="">
+                        </div>
+                    </a>
+                    <div class="bosung">
+                        <div class="option-color">
+                            <label onclick="choiceColor(this,'1-1');" for="optionxx"><img src="/images/Ellipse 2.png"
+                                    alt=""></label>
+                            <label onclick="choiceColor(this,'1-2');" for="option1xx"><img src="/images/Ellipse 3.png"
+                                    alt=""></label>
+                            <!-- <label for="option2"></label>
+                                <label for="option3"></label> -->
+                            <input type="radio" id="optionxx" name="mau">
+                            <input type="radio" id="option1xx" name="mau">
+                            <!-- <input type="radio" id="option2" name="mau">
+                                <input type="radio" id="option3" name="mau"> -->
+                        </div>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <a href="">
+                        <div class="decription">
+                            <a href="/fashion/<%=ct.id%>"><span><%=ct.tenThoiTrang%></span><br></a>
+                            <span class="gia">
+                                <b>₫<%=ct.gia.toLocaleString('vi')%></b>
+                            </span><br>
+                            <span class="kieuchu"><%=ct.discountEventInformation%></span><br>
+                            <span class="mamau"><%=ct.status%></span><br>
+                            <% for (let i = 0; i < Math.floor(ct.rating); i++) {%>
+                                    <i style="color: gold;" class="fa-solid fa-star"></i>
+                                    <% } if(Math.ceil(ct.rating)- Math.floor(ct.rating)===1){ %>
+                                        <i style="color: gold;"class="fa-solid fa-star-half-stroke"></i>
+                                    <%}%>
+                            <span><%=ct.comment%> Comments</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <%for(let c of loaiThoiTrang){%>
+                    <div class="dropdown">
+                      <a href="/cat/<%=c.id%>"><button class="dropbtn"><%=c.tenLoai%></button></a>
+                      <div class="dropdown-content">
+                        <!-- <div class="bannerDropdown">
+        
+                        </div> -->
+                      </div>v
+                    </div>
+                    <%}%>
+
+
+
+                    <%for(const [i, v] of listHinh.entries()){%>
+                        
+                        <%}%>
+
+
+                        <%for(let h of listHinh){%>
+                            <div id="slide-one" class="slide-first">
+                                <img class="images" src="/<%=h.urlHinhSlide%>" alt="">
+                            </div>
+                            <% }%>
+
+
+
+                            <h1><%=fashion.tenThoiTrang%></h1>
+                <div class="chinhchu">
+                    <img src="/images/saonua.png" alt="">
+                    <span>Read 6 Reviews | 1 Question, 41 Answers | 41 Buyer Comments or Write a Review</span>
+                </div>
+                <span class="giaca"><%=fashion.gia.toLocaleString('vi')%>VNĐ</span><br>
+                <span class="chinhchutiep"><s></s></span>
+                <span class="chinhchutiep"><%=fashion.discountEventInformation%></span>
+                <div class="kchr">
+                    <hr>
+                    <img class="plcc" src="/images/plcc_card_logo.webp" alt="">
+                    <hr>
+                </div>
